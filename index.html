@@ -1,6 +1,27 @@
-Hello World ! 
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>markdown blog</title>
+	<script src="lib/jquery-1.7.1.js"></script>
+</head>
+<body>
+	<h1>Markdown Blog</h1>
 
-This is blog index page.
+	<a href="detail/blog-1.html">blog-1</a>
+	<a href="detail/blog-2.html">blog-2</a>
+	<a href="detail/blog-3.html">blog-3</a>
 
 
-<a href="disk/blog-1.html">blog-1</a>
+	<script>
+		$(document).ready(function() {
+			$('a').mouseover(function() {
+				var $this = $(this);
+				$this.css({'background-color': '#cccccc', 'color': 'blue'});
+			});
+		});
+	</script>
+
+
+</body>
+</html>
